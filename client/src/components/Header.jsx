@@ -1,5 +1,6 @@
 import React from "react";
 import {Link, IndexLink} from "react-router";
+import PropTypes from 'prop-types';
 
 const Header = ({children}) => (
  <div className="container-fluid">
@@ -12,8 +13,11 @@ const Header = ({children}) => (
     </div>
     {children}
  </div>
-
 );
+
+Header.propTypes = {
+    children: PropTypes.node
+  };
 
 export default Header;
     

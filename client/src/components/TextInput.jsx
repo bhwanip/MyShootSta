@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const TextInput = ({ label, name, placeholder, handleTextChange, value }) => (
     <div className="form-group">
@@ -9,4 +10,11 @@ const TextInput = ({ label, name, placeholder, handleTextChange, value }) => (
 
 )
 
+TextInput.propTypes = {
+    label: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    handleTextChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired
+  };
 export default TextInput;

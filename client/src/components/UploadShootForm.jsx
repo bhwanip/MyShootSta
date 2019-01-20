@@ -1,6 +1,7 @@
 import React from 'react';
 import TextInput from './TextInput';
 import FileInput from './FileInput';
+import PropTypes from 'prop-types';
 
 const UploadShootForm = (props) => (
     <div className="container">
@@ -27,5 +28,19 @@ const UploadShootForm = (props) => (
         </div>
     </div>
 )
+
+UploadShootForm.propTypes = PropTypes.shape({
+    message: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    editor: PropTypes.string.isRequired,
+    hanleFormChange: PropTypes.func.isRequired,
+    label: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    handleFileChange: PropTypes.func.isRequired,
+    captureFileEl: PropTypes.func.isRequired,
+    handleTextChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired
+}).isRequired;
 
 export default UploadShootForm;

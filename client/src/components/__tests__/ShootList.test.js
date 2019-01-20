@@ -7,7 +7,7 @@ import {
 
 describe('<ShootList/>', () => {
 
-  let videos = [{'id': '100'},{'id': '200'}]  
+  let videos = [{'url': 'http://test_01.com', 'title': 'title_01', 'editor':'editor_01'},{'url': 'http://test_02.com', 'title':'title_02','editor':'editor_02'}]  
 
   it('Renders List of Shoot Videos', () => {
     const wrapper = shallow( < ShootList videos={videos} / > );

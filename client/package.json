@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router": "^3.0.2",
@@ -30,7 +31,10 @@
     "enzyme-adapter-react-16": "^1.7.1",
     "react-test-renderer": "^16.7.0"
   },
-  "jest" : {
-    "collectCoverageFrom": ["src/**/*.{js,jsx}","!src/index.js"]
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js"
+    ]
   }
 }
