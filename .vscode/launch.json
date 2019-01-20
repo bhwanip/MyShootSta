@@ -4,12 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/bin/www"
-        },
+       
         
         {
             "name": "Debug CRA Tests",
@@ -19,36 +14,13 @@
             "args": [
               "test",
               "--runInBand",
-              "--no-cache"
+              "--no-cache",
+              "--env=jsdom"
             ],
             "cwd": "${workspaceRoot}/client",
-            "protocol": "inspector",
             "console": "integratedTerminal",
+            "protocol": "auto",
             "internalConsoleOptions": "neverOpen"
-          },
-          {
-            "type": "node",
-            "request": "launch",
-            "name": "Node Jest Current File",
-            "program": "${workspaceFolder}/node_modules/.bin/jest",
-            "args": ["${relativeFile}"],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "windows": {
-              "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-            }
-          },
-          {
-            "type": "node",
-            "request": "launch",
-            "name": "Jest All",
-            "program": "${workspaceFolder}/node_modules/.bin/jest",
-            "args": ["--runInBand"],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "windows": {
-              "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-            }
           }
     ]
 }

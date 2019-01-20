@@ -1,4 +1,3 @@
-const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -24,11 +23,6 @@ if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'PRODUCTIO
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
 }
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
 
 // error handler
 app.use(function(err, req, res, next) {

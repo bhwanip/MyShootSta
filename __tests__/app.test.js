@@ -72,6 +72,15 @@ describe("API Integeration Test", () => {
         done();
     });
 
+    it("POST 500 Server Error", async (done) => {
+        let postresponse = null;
+        postresponse = await request(app).post('/api/videos')
+            .field('title', 'Video 3')
+            .field('editor', 'Editor 3');
+        expect(postresponse.statusCode).toBe(500);
+        done();
+    });
+
     const verifyGetResponseAfterPost = async (app) => {
         const getresponse = await request(app).get("/api/videos");
         expect(getresponse.body.length).toBe(3);

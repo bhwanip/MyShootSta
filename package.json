@@ -37,8 +37,7 @@
   "jest": {
     "testPathIgnorePatterns": [
       "/client/",
-      "/node_modules/",
-      "/node_modules_back/"
+      "/node_modules/"
     ],
     "cacheDirectory": "./jest_0",
     "testURL": "http://localhost"
