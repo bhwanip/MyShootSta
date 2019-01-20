@@ -5,21 +5,21 @@
 This is a Single Page App built with React using NodeJS as the API backend. It allows you to upload videos and then stream them. The app has two routes:
 
 ### List Videos
-This is the home page for the app
+This is the Responsive home page for the app.
 
 ### Upload Videos
-This is a Responsive Web form which to upload videos
+This is a Responsive Web form which is used to upload videos.
 
 ## NPM Commands Overview
 
 ```sh
 npm run client
 ```
-Above command would start the client React would on port 3001, You can access the typically app at [http://localhost:3001](http://localhost:3001)
+Above command would start the client React  on port 3001, You can access the typically app at [http://localhost:3001](http://localhost:3001)
 
 ```sh
 npm run server
-``
+```
 Above command would start the NodeJS API server on port 3000, You can access the API's typically at [http://localhost:3000](http://localhost:3000)
 The sever exposes below api's.
 
