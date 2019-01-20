@@ -1,0 +1,46 @@
+{
+  "name": "myshootsta",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "node ./bin/www",
+    "start:dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "start:prod": "NODE_ENV=PRODUCTION npm run server",
+    "test": "./node_modules/.bin/jest  --verbose --no-cache --runInBand && cd client && npm test",
+    "coverage": "./node_modules/.bin/jest  --verbose --no-cache --runInBand --coverage && cd client && npm test -- --coverage"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1",
+    "uuid4": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "23.6.0",
+    "regenerator-runtime": "^0.13.1",
+    "supertest": "^3.4.1",
+    "concurrently": "^4.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/client/",
+      "/node_modules/",
+      "/node_modules_back/"
+    ],
+    "cacheDirectory": "./jest_0",
+    "testURL": "http://localhost"
+  }
+}

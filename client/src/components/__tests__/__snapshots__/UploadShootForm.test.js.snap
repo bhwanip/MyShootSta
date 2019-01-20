@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadShootForm/> should render correctly with error message 1`] = `
+<div
+  className="container"
+>
+  <div
+    className=".col-md-offset-4 media-list"
+  >
+    <div
+      className="panel panel-default"
+    >
+      <div
+        className="panel-heading"
+      >
+        <h2
+          className="panel-title text-center"
+        >
+          Upload Video
+        </h2>
+      </div>
+      <div
+        className="panel-body"
+      >
+        <div
+          className="alert alert-success"
+        >
+          Error, please try again..
+        </div>
+        <form
+          encType="multipart/form-data"
+          onChange={[MockFunction]}
+          onSubmit={[MockFunction]}
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the title..."
+              type="text"
+              value="TestTitle"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the Editor Name..."
+              type="text"
+              value="TestEditor"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+             
+            <br />
+            <input
+              name="TestName"
+              onChange={[MockFunction]}
+              type="file"
+            />
+          </div>
+          <button
+            className="btn btn-primary btn-lg"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<UploadShootForm/> should render correctly with no message 1`] = `
+<div
+  className="container"
+>
+  <div
+    className=".col-md-offset-4 media-list"
+  >
+    <div
+      className="panel panel-default"
+    >
+      <div
+        className="panel-heading"
+      >
+        <h2
+          className="panel-title text-center"
+        >
+          Upload Video
+        </h2>
+      </div>
+      <div
+        className="panel-body"
+      >
+        <form
+          encType="multipart/form-data"
+          onChange={[MockFunction]}
+          onSubmit={[MockFunction]}
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the title..."
+              type="text"
+              value="TestTitle"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the Editor Name..."
+              type="text"
+              value="TestEditor"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+             
+            <br />
+            <input
+              name="TestName"
+              onChange={[MockFunction]}
+              type="file"
+            />
+          </div>
+          <button
+            className="btn btn-primary btn-lg"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<UploadShootForm/> should render correctly with success message 1`] = `
+<div
+  className="container"
+>
+  <div
+    className=".col-md-offset-4 media-list"
+  >
+    <div
+      className="panel panel-default"
+    >
+      <div
+        className="panel-heading"
+      >
+        <h2
+          className="panel-title text-center"
+        >
+          Upload Video
+        </h2>
+      </div>
+      <div
+        className="panel-body"
+      >
+        <div
+          className="alert alert-success"
+        >
+          Your Video has been uploaded sucessfully
+        </div>
+        <form
+          encType="multipart/form-data"
+          onChange={[MockFunction]}
+          onSubmit={[MockFunction]}
+        >
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the title..."
+              type="text"
+              value="TestTitle"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+            <input
+              className="form-control"
+              name="TestName"
+              onChange={[MockFunction]}
+              placeholder="Enter the Editor Name..."
+              type="text"
+              value="TestEditor"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <label
+              htmlFor="TestName"
+            >
+              TestLabel
+            </label>
+             
+            <br />
+            <input
+              name="TestName"
+              onChange={[MockFunction]}
+              type="file"
+            />
+          </div>
+          <button
+            className="btn btn-primary btn-lg"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
