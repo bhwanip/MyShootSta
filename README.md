@@ -4,10 +4,10 @@
 
 This is a Single Page App built with React using NodeJS as the API backend. It allows you to upload videos and then stream them. The app has two routes:
 
-###List Videos
+### List Videos
 This is the home page for the app
 
-###Upload Videos
+### Upload Videos
 This is a Responsive Web form which to upload videos
 
 ## NPM Commands Overview
