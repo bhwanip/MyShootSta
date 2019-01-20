@@ -55,3 +55,7 @@ Above command would trigger the code coverage report for both client and server 
 ## Demo Images
 
 Refer to `images` directory at the project root for images of List and Upload views.
+
+## Persistence Strategy
+
+Each video upload is assigned a unique UUID and stored in a configurable directory location (process.env.UPLOAD_PATH) default value being `.\video_uploads`. This list of videos access url's along with other details like UUID, Title and Editor Name are stored as a JSON Array in `db.json` file, the file name can be overiden by process.env.DB_FILE propety.
