@@ -15,10 +15,10 @@ const {
 } = require('../controllers/controller');
 
 const {
-    videoUploader
-} = require('../middleware/videoUploader');
+    videoUploader,
+    directoryCreator
+} = require('../middleware');
 
-const directoryCreator = require('../middleware/directoryCreator');
 const router = express.Router();
 
 router.post('/videos', directoryCreator, videoUploader.single('videoshoot'), postVideoShoot);
