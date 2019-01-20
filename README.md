@@ -24,7 +24,7 @@ Above command would start the NodeJS API server on port 3000, You can access the
 The sever exposes below api's.
 
 - **GET /api/videos** To fetch the list of all the videos as JSON Array.
-- **POST /api/videos** To upload a video, save it to the disk and add it to the aboev list of videos
+- **POST /api/videos** To upload a video, save it to the disk and add it to the above list of videos
 - **GET /video/uuid** To server the uploaded videos as a static resource for streaming and viewing
 
 ```sh
@@ -32,4 +32,22 @@ npm run start:dev
 ```
 Above command would start the app in dev mode, React would generally come up on port 3001, and NodeJS API server on port 3000. You can access the app typically at [http://localhost:3001](http://localhost:3001)
 
+```sh
+npm run build
+```
+Above commad would use the Create React App Scripts to build and optimize client side assets for our application.
 
+```sh
+npm run start:prod
+```
+Above command would start the app in Production mode (NODE_ENV=PRODUCTION), it would use Node as the the web server, serving client side assets from `client\build`. The API's for upload and listing of videos would also be provided by Node Server.
+
+```sh
+npm test
+```
+Above command would trigger the test suites for both client and server side.
+
+```sh
+npm run coverage
+```
+Above command would trigger the code coverage report for both client and server side.
